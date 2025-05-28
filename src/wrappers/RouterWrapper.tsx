@@ -7,10 +7,12 @@ const RouterWrapper: FC<IRouterPath[]> = (list) => {
     <BrowserRouter>
       <Routes>
         {
-          list.map((pair) => <Route path={pair.path} element={pair.element}>)
+          list.map((pair) => <Route path={pair.path} element={pair.element}/>)
         }
       </Routes>
     </BrowserRouter>
 
   )
 }
+
+export default RouterWrapper;
