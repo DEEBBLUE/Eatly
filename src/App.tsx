@@ -1,16 +1,12 @@
 import type { FC } from "react"
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import HomePage from "./pages/Home/HomePage"
+import RouterWrapper from "./wrappers/RouterWrapper"
+import { RoutingList } from "./routingList"
+
 
 const App: FC = () => {
-
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage/>}/>
-        </Routes>
-      </BrowserRouter>
+      <RouterWrapper list={RoutingList}/>
     </>
   )
 }
