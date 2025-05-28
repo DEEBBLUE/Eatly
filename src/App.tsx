@@ -1,13 +1,16 @@
 import type { FC } from "react"
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import HomePage from "./pages/Home/HomePage"
 
 const App: FC = () => {
 
   return (
     <>
-      <div>
-        Hello
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
