@@ -2,7 +2,12 @@ import type { FC } from "react";
 import type { IRouterPath } from "../types/IRouterPath";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const RouterWrapper: FC<IRouterPath[]> = ({ list }) => {
+interface RouterWrapperProps{
+  list: IRouterPath[]
+
+}
+
+const RouterWrapper: FC<RouterWrapperProps> = ({ list }) => {
   
   return(
     <BrowserRouter>
