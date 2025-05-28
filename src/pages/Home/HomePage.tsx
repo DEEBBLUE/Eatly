@@ -1,11 +1,13 @@
-import { FC } from "react";
+import type { FC } from "react";
+import HeaderModule from "../../modules/HeaderModule/HeaderModule"
 
 
 
 const HomePage: FC = () => {
   return (
-    <div>
-    </div>
+    <>
+      <HeaderModule/>
+    </>
   )
 }
 
