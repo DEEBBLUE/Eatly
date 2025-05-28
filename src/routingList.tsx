@@ -1,4 +1,4 @@
-import { IRouterPath } from "./types/IRouterPath"
+import type { IRouterPath }  from "./types/IRouterPath"
 import HomePage from "./pages/Home/HomePage"
 
 export const RoutingList: IRouterPath[] = [
