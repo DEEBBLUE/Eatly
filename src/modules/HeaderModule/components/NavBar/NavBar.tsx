@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import "./navbar.scss"
 
 interface NavBarProps{
   list: Array<[string,string]> 
@@ -6,7 +7,7 @@ interface NavBarProps{
 
 const NavBar: FC<NavBarProps> = ({ list }) => {
   return(
-    <nav>
+    <nav className="header__navbar">
       <ul>
         {
           list.map((item) => <li>{item[0]}</li> )
