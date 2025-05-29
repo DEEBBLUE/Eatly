@@ -1,12 +1,14 @@
 import type { FC } from "react";
-import HeaderModule from "../../modules/HeaderModule/HeaderModule"
+import BasicPageTemplate from "../../templates/BasicPageTemplate/BasicPageTemplate";
 
 
 
 const HomePage: FC = () => {
   return (
     <>
-      <HeaderModule/>
+      <BasicPageTemplate>
+        <div>hello</div>
+      </BasicPageTemplate>
     </>
   )
 }
