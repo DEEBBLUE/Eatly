@@ -1,5 +1,6 @@
 import type { FC, ReactNode } from "react";
 import HeaderModule from "../../modules/HeaderModule/HeaderModule";
+import "./basicPageTemplate.scss"
 
 
 interface BasicPageTemplateProps{
@@ -9,7 +10,9 @@ interface BasicPageTemplateProps{
 const BasicPageTemplate: FC<BasicPageTemplateProps> = ({ children }) => {
   return(
     <>
-      <HeaderModule/>
+      <div className="header__container">
+        <HeaderModule/>
+      </div>
       { children }
     </>
   )
