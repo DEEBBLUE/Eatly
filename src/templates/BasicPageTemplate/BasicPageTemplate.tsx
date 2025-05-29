@@ -1,9 +1,18 @@
-import type { FC } from "react";
+import type { FC, ReactNode } from "react";
+import HeaderModule from "../../modules/HeaderModule/HeaderModule";
 
 
-const BasicPageTemplate: FC = () => {
+interface BasicPageTemplateProps{
+  children: ReactNode
+}
+
+const BasicPageTemplate: FC<BasicPageTemplateProps> = ({ children }) => {
   return(
-    <></>
+    <>
+      <HeaderModule/>
+      { children }
+    </>
   )
 }
+
 export default BasicPageTemplate;
