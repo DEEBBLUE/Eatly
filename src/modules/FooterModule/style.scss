@@ -1,0 +1,48 @@
+.footer{
+  max-width: 1440px;
+  height: 345px;
+
+  padding: 0 101.5px ;
+
+  background: #EAEAEA;
+
+  position: relative;
+
+  &__header{
+    position: relative;
+    top: 96px; 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+  }
+  &__hr{
+    position: relative;
+    top: 125px;
+    
+    border: none;
+    border-top: 1px solid #818181;
+
+    max-width: 1246px;
+  }
+  &__sheetContainer{
+    position: relative;
+    top: 182px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    &-p{
+    color: #999999;
+      font: {
+        family: "Inter";
+        weight: 500;
+        size: 17px;
+      }
+    }
+  }
+
+}
