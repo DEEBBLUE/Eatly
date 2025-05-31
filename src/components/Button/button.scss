@@ -1,0 +1,33 @@
+.btn{
+  border-radius: 17.8px;
+  padding: 17.8px 26.7px;
+
+  font: {
+    family: "Inter";
+    weight: 700;
+    size: 17.8px;
+  }
+  &:hover{
+    cursor: pointer;
+
+  }
+}
+
+.btn_basic{
+  border: none;
+  background: #fff;
+  color: #606060; 
+}
+
+.btn_style{
+  border: 1px solid #6C5FBC;
+  color: #fff;
+ 
+  background: #6C5FBC;
+  transition: background 0.4s;
+ 
+  &:hover{
+    background: #fff;
+    color: #6C5FBC;
+  }
+}
