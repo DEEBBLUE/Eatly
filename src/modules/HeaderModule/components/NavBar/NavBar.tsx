@@ -1,16 +1,13 @@
 import type { FC } from "react";
 import "./navbar.scss"
+import { NavBarList } from "./NavBarList.ts"
 
-interface NavBarProps{
-  list: Array<[string,string]> 
-}
-
-const NavBar: FC<NavBarProps> = ({ list }) => {
+const NavBar: FC= () => {
   return(
     <nav className="header__navbar">
       <ul>
         {
-          list.map((item) => <li>{item[0]}</li> )
+          NavBarList.map((item) => <li>{item[0]}</li> )
         }
       </ul>
     </nav> 
