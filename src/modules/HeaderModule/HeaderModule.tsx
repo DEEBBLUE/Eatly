@@ -2,7 +2,7 @@ import type { FC } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import { NavBarList } from "./NavBarList";
 import "./style.scss";
-import Logo from "./components/Logo/Logo";
+import Logo from "../../components/Logo/Logo";
 import Auth from "./components/Auth/Auth";
 
 const HeaderModule: FC = () => {
@@ -10,7 +10,7 @@ const HeaderModule: FC = () => {
     <header className="header">
       <div className="header__menuContainer">
         <div className="header__menuContainer-left">
-          <Logo/>
+          <Logo style="header__logo"/>
           <NavBar list={NavBarList}/>
         </div>
         <div className="header__menuContainer-rigth">
