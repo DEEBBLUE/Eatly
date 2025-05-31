@@ -10,7 +10,7 @@ interface NavBarProps{
 
 const NavBar: FC<NavBarProps> = ({ styles }) => {
   return(
-    <nav className={"navbar" + styles}>
+    <nav className={"navbar " + styles}>
       <ul>
         {
           NavBarList.map((item) => <li>{item[0]}</li> )
