@@ -1,8 +1,10 @@
 import type { FC } from "react";
 import "./button.scss";
 
+type buttonStyles = "btn_basic" | "btn_style"
+
 interface ButtonProps{
-  styles?: string,
+  styles?: buttonStyles,
   name: string,
   action: () => void
 }
