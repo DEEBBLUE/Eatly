@@ -1,0 +1,13 @@
+.sheetList__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 234.5px;
+  height: 21.4px;
+  column-gap: 37.225px;
+  
+  &-img{
+    height: 21.4px; 
+  }
+
+}
