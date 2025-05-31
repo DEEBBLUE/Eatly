@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 interface RouterWrapperProps{
   list: IRouterPath[]
-
 }
 
 const RouterWrapper: FC<RouterWrapperProps> = ({ list }) => {
