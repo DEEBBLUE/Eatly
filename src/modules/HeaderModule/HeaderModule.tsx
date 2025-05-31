@@ -5,8 +5,11 @@ import "./style.scss"
 
 const HeaderModule: FC = () => {
   return(
-    <header>
-      <NavBar list={NavBarList}/> 
+    <header className="header">
+      <div className="header__menuContainer">
+         
+        <NavBar list={NavBarList}/> 
+      </div>
     </header>
   )
 }
