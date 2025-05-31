@@ -1,7 +1,19 @@
-header {
-  width: 1248px;
-  height: 62.5px;
+.header {
+  max-width: 1440px;
+  height: 135px;
+  
+  position: sticky;
+  top: 0; 
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   display: flex;
   align-items: center;
+}
+.header__menuContainer{
+  width: 1248px;
+  height: 62.5px;
 }
