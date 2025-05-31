@@ -1,4 +1,4 @@
-.header__navbar{
+.navbar{
   display: flex;
   ul{
     list-style-type: none;
@@ -6,13 +6,31 @@
     display: flex;
     flex-direction: row;
 
+    li{
+      font:{
+        family: "Inter";
+        weight: 500;
+        size: 17.8px;
+      }
+    }
+  }
+}
+
+.header__navbar{
+  ul{
     column-gap: 53.5px;
 
     li{
-      font-family: "Inter";
-      font-weight: 500;
-      font-size: 17.8px;
       color: #606060;
+    }
+  }
+}
+.footer__navbar{
+  ul{
+    column-gap: 70px;
+
+    li{
+      color: #999999;
     }
   }
 }
