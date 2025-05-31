@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import logo from "../../../../../assets/Logo.svg";
+import logo from "../../../assets/Logo.svg";
 import "./logo.scss";
 
 type logoStyle = "header__logo" | "footer__logo"
